@@ -1,8 +1,13 @@
+import dotenv from "dotenv"
+dotenv.config()
+
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai"
 import { ChatGroq } from "@langchain/groq";
 
 import readline from "readline/promises"
 import { AIMessage, HumanMessage,SystemMessage} from "@langchain/core/messages"
+
+
 
 
 const rl = readline.createInterface({
